@@ -1,15 +1,20 @@
 <script>
-    import * as Card from "$lib/components/ui/card";
     import { Badge } from "$lib/components/ui/badge";
     import * as Popover from "$lib/components/ui/popover";
-    import { Separator } from "$lib/components/ui/separator";
     import { onMount } from "svelte";
     import { Button } from "$lib/components/ui/button";
-    import { ArrowRight, Share2, Info, Link, CopyCheck, Code, TrendingUp, Percent } from "lucide-svelte";
+    import ArrowRight from "lucide-svelte/icons/arrow-right";
+    import Share2 from "lucide-svelte/icons/share-2";
+    import Info from "lucide-svelte/icons/info";
+    import CopyCheck from "lucide-svelte/icons/copy-check";
+    import Link from "lucide-svelte/icons/link";
+    import Code from "lucide-svelte/icons/code";
+    import TrendingUp from "lucide-svelte/icons/trending-up";
+    import Percent from "lucide-svelte/icons/percent";
     import { buttonVariants } from "$lib/components/ui/button";
     import { Skeleton } from "$lib/components/ui/skeleton";
     import { createEventDispatcher } from "svelte";
-    import { beforeUpdate, afterUpdate } from "svelte";
+    import { afterUpdate } from "svelte";
     import * as RadioGroup from "$lib/components/ui/radio-group";
     import { Label } from "$lib/components/ui/label";
     const dispatch = createEventDispatcher();

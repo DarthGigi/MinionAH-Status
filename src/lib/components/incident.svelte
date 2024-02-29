@@ -5,8 +5,7 @@
     import moment from "moment";
     import { Button } from "$lib/components/ui/button";
     import { Badge } from "$lib/components/ui/badge";
-    import {  ChevronDown } from "lucide-svelte";
-    import * as Collapsible from "$lib/components/ui/collapsible";
+    import ChevronDown from "lucide-svelte/icons/chevron-down";
 	import axios from "axios";
 	import { Skeleton } from "$lib/components/ui/skeleton";
     export let incident;

@@ -1,14 +1,8 @@
-<script>
-    import * as Card from "$lib/components/ui/card";
-	
+<script>	
     import Incident from "$lib/components/incident.svelte";
     export let data;
     import { Separator } from "$lib/components/ui/separator";
-    import moment from "moment";
     import { Badge } from "$lib/components/ui/badge";
-    import { ArrowDown, ArrowUp, ChevronUp, BadgeCheck, ChevronDown } from "lucide-svelte";
-    import * as Collapsible from "$lib/components/ui/collapsible";
-
 </script>
 <svelte:head>
 	<title>
