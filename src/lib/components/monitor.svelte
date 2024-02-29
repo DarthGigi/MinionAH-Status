@@ -256,10 +256,10 @@
         <div class="grid grid-cols-12">
             <div class="{monitor.embed === undefined ? 'col-span-12': 'col-span-8'} md:col-span-8 h-[32px]">
                 <button class="inline-block" on:click="{(e) => {switchView('90day')}}">
-                    <Badge variant="{view != '90day' ? 'outline' : ''}"> 90 Day ► {uptime90Day}% </Badge>
+                    <Badge variant="{view != '90day' ? 'outline' : ''}" class="data-[active=true]:text-foreground data-[active=true]:bg-background" data-active={view == '90day'}> 90 Day ► {uptime90Day}% </Badge>
                 </button>
-                <button on:click="{(e) => {switchView('0day')}}">
-                    <Badge variant="{view != '0day' ? 'outline' : ''}"> Today ► {uptime0Day}% </Badge>
+                <button on:click="{(e) => {switchView('0day')}}" >
+                    <Badge variant="{view != '0day' ? 'outline' : ''}" class="data-[active=true]:text-foreground data-[active=true]:bg-background" data-active={view !== '90day'}> Today ► {uptime0Day}% </Badge>
                 </button>
             </div>
             <div class="{monitor.embed === undefined ? 'col-span-12': 'col-span-4'} md:col-span-4 text-right h-[32px]">
