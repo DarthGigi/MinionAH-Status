@@ -1,0 +1,18 @@
+- name: MinionAH
+  description: "MinionAH is the best place to trade Hypixel SkyBlock minions. Minion auction house has a modern design, has QOL features for trading skyblock minions, and more."
+  tag: "minionah"
+  api:
+    method: GET
+    url: https://minionah.com
+- name: Newsroom
+  description: "MinionAH Newsroom is the source for news about MinionAH. Read new announcements, stay up-to-date, watch video's and download images."
+  tag: "newsroom"
+  api:
+    method: GET
+    url: https://newsroom.minionah.com
+- name: OG
+  description: "MinionAH Open Graph image generator. This internal service generates Open Graph images for MinionAH."
+  tag: "og"
+  api:
+    method: GET
+    url: https://og.minionah.com
